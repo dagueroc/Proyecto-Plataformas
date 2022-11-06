@@ -7,7 +7,7 @@ import pygame
 class pacman(pygame.sprite.Sprite):
     def __init__(self, position):
         #CARGA LA IMAGEN
-        self.sheet = pygame.image.load('/home/ranleon/Downloads/pacman_sprite.png')
+        self.sheet = pygame.image.load('sprite_pacman.png')
 
 
         # IMAGEN DE INICIO, SOLO EL PEDAZO DE IMAGEN QUE QUEREMOS
