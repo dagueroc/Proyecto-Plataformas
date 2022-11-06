@@ -169,8 +169,7 @@ def main(contador_comida):
         if contador_comida == 0:
             game_over = True
 
-        # pygame.mixer.music.load('/home/
-        /Downloads/pacman_beginning.wav')
+        # pygame.mixer.music.load('/home//Downloads/pacman_beginning.wav')
         # pygame.mixer.music.play(8888888)
 
 
