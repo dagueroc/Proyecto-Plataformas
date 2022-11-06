@@ -9,7 +9,7 @@ pygame.init()
 # F UNCIONES ENCARGADAS DE CREAR LOS MUROS Y LA COMIDA
 def dibuja_muro(superficie, rectangulo):
     pygame.draw.rect(superficie, BLUE, rectangulo)
-    #imagen_muro = pygame.image.load('/home/ranleon/muros.png')
+    #imagen_muro = pygame.image.load('muros.png')
     #muro_nuevo = pygame.transform.scale(imagen_muro,(20,20))
     #superficie.blit(muro_nuevo,rectangulo)
 
@@ -17,7 +17,7 @@ def dibuja_comida(superficie, rectangulo):
     pygame.draw.rect(superficie, BLANCO, rectangulo, 20, 20)
 
 def dibuja_food_special(superficie, rectangulo):
-    imagen_food= pygame.image.load('/home/ranleon/food.png')
+    imagen_food= pygame.image.load('food.png')
     food = pygame.transform.scale(imagen_food,(20,20))
     superficie.blit(food,rectangulo)
 
@@ -137,7 +137,7 @@ def main(contador_comida):
                 comida.remove(v_comida)
 
                 # SONIDI FOOD
-                pygame.mixer.music.load('/home/ranleon/Downloads/pacman_chomp.wav')
+                pygame.mixer.music.load('pacman_chomp.wav')
                 pygame.mixer.music.play()
                 # VA RESTANDO LA COMIDA
                 contador_comida -= 1
@@ -150,7 +150,7 @@ def main(contador_comida):
                 # VA RESTANDO LA COMIDA EN EL CONTADOR
                 contador_comida -= 1
                 # SONIDO ESPECIAL FOOD
-                pygame.mixer.music.load('/home/ranleon/Downloads/pacman_eatfruit.wav')
+                pygame.mixer.music.load('pacman_eatfruit.wav')
                 pygame.mixer.music.play()
 
         #IMPRIME EN PANTALLA EL CONTADOR DE COMIDA
@@ -169,7 +169,8 @@ def main(contador_comida):
         if contador_comida == 0:
             game_over = True
 
-        # pygame.mixer.music.load('/home/ranleon/Downloads/pacman_beginning.wav')
+        # pygame.mixer.music.load('/home/
+        /Downloads/pacman_beginning.wav')
         # pygame.mixer.music.play(8888888)
 
 
@@ -186,7 +187,7 @@ BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 
 
-pygame.mixer.music.load('/home/ranleon/Downloads/pacman_beginning.wav')
+pygame.mixer.music.load('pacman_beginning.wav')
 pygame.mixer.music.play(8888888)
 
 # VARIABLES
