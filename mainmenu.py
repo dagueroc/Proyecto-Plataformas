@@ -60,6 +60,7 @@ def main_menu():
                     selected = "quit"
                 if event.key == pygame.K_RETURN:
                     if selected == "iniciar":
+                        pygame.mixer.music.stop()
                         print("iniciar")
                         os.system('/usr/bin/python3 nivel1.py')
                         quit()
