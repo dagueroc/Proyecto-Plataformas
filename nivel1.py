@@ -243,5 +243,6 @@ BLUE = (0, 0, 255)
 
 # main
 # llamar la funcion de construit mapa primero para que forme la listas
-muros, comida, contador_comida, food_special = construir_mapa(mapa)
-main(contador_comida)
+if __name__ == '__main__':
+    muros, comida, contador_comida, food_special = construir_mapa(mapa)
+    main(contador_comida)
