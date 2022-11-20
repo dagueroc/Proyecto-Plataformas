@@ -61,6 +61,8 @@ def main_menu():
                 if event.key == pygame.K_RETURN:
                     if selected == "iniciar":
                         print("iniciar")
+                        os.system('/usr/bin/python3 nivel1.py')
+                        quit()
                     if selected == "quit":
                         pygame.quit()
                         quit()
